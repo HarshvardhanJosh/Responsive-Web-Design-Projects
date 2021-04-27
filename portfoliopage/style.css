@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: #eee;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(230, 230, 85);
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#navbar ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+  font-size: x-large;
+}
+
+#navbar li {
+  margin-left: 50px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #202022;
+}
+
+#welcome-section h1 {
+  color: rgb(230, 230, 85);
+}
+
+#welcome-section p {
+  color: rgb(230, 230, 85);
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(253, 217, 204);
+  width: 100vw;
+}
+
+#projects h1 {
+  color: #333;
+}
+
+#projects #grid-container-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100vw;
+  margin: auto;
+  padding-top: 30px;
+  background-color: rgb(253, 217, 204);
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  line-height: 1.3rem;
+}
+
+.project img {
+  width: 100%;
+  height: 370px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.project .project-tile {
+  margin: 0px;
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #303841;
+  line-height: 1.5rem;
+}
+
+#projects button {
+  color: #333;
+  background-color: yellow;
+  font-size: 1.1rem;
+  padding: 10px 25px;
+  border: 2px solid #303841;
+  border-radius: 5px;
+  margin: 20px;
+  transition: background 0.3s ease-out;
+}
+
+#projects button:hover {
+  color: yellow;
+  background-color: #333;
+}
+
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  width: 100vw;
+  height: 80vh;
+  background-color: #303841;
+}
+
+#contact-section h1 {
+  margin-bottom: 0;
+}
+
+#contact-section p {
+  margin-top: 0;
+  font-size: smaller;
+}
+
+#contact-section #social-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#social-bar .icon {
+  width: 20px;
+  height: 20px;
+}
+
+#contact-section a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: font-size 0.3s ease-in;
+  margin: 0px 30px 0px 30px;
+}
+#contact-section a:hover {
+  letter-spacing: 2px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: x-large;
+  background-color: #fff;
+  color: #333;
+  width: 100vw;
+  border-top: 2px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  #projects #grid-container-projects {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+  #projects #grid-container-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+}
